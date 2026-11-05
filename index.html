@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Sugargoo spreadsheet — kategorie, QC i rozmiary</title>
+  <meta name="description" content="Poznaj Sugargoo spreadsheet po polsku. Przeglądaj kategorie butów i ubrań, porównuj rozmiary, czytaj zdjęcia QC i sprawdzaj szczegóły przed wyborem produktu.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#173d43">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:title" content="Sugargoo spreadsheet — od inspiracji do dobrego wyboru">
+  <meta property="og:description" content="Polski przewodnik po kategoriach, zdjęciach QC i pomiarach. Konkretne pytania, krótkie artykuły i świadome porównywanie produktów.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=1000&amp;q=78">
+  <meta property="og:image:alt" content="Czerwony but sportowy Nike z białą podeszwą na czerwonym tle">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sugargoo spreadsheet — kategorie, QC i rozmiary">
+  <meta name="twitter:description" content="Jak porównywać buty, ubrania i dodatki? Polski przewodnik z kategoriami, poradami i odpowiedziami na pytania.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=1000&amp;q=78">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <!--
+  Plik: index.html. Niezależna strona redakcyjna, bez deklarowanego partnerstwa.
+  Adres publikacji nie został podany: canonical oraz og:url należy ustawić
+  na własny, docelowy adres tej strony po wybraniu domeny.
+
+  Notatka badawcza, 2026-11-05: próba otwarcia wyszukiwania Google nie powiodła się.
+  Poniższe 10 różnych domen pochodzi z dostępnego indeksu wyszukiwania;
+  nie jest to potwierdzona pierwsza dziesiątka Google. Nie kopiowano opisów,
+  cen, ocen, deklaracji autentyczności ani liczebności katalogów.
+  Domena — tytuł lub temat SEO — zidentyfikowana intencja:
+  1. sugargoo--spreadsheet.com — Sugargoo spreadsheet / One-Stop Platform
+     — finds, buty, bluzy, porządkowanie kategorii; dostępny fragment indeksu.
+  2. sugargo.net — Sugargoo New Spreadsheet — kategorie i porównanie ofert.
+  3. sugargooo.com — Sugargoo Spreadsheet — zdjęcia QC i linki do produktów.
+  4. sheetsugargoo.com — Complete Collection of Streetwear and Fashion Clothing Links
+     — streetwear, nakrycia głowy, odzież; wariant www liczony tylko raz.
+  5. sugargootab.com — Shoes, Clothing & Product Links — rozmiary, QC, poradniki.
+  6. sugargoo.org — Sugargoo spreadsheet — koszulki, obuwie i dodatki.
+  7. sugargoo-spreadsheets.org — Shoes, Bags, Budget Finds, Coupons
+     — wybór kategorii i planowanie kosztów; obietnic rabatowych nie przejęto.
+  8. repsheet.net/spreadsheet/sugargoo — Sugargoo Spreadsheet
+     — warianty, zdjęcia, filtrowanie i porównanie referencji.
+  9. sugargoo--spreadsheets.com — Shop from China, Delivered Straight to You
+     — listy finds i grupy produktów; dostępny fragment indeksu.
+  10. sugargoo-sheet.cfd — Finds, QC & Shopping Guide — kategorie i poradniki.
+
+  Cztery tematy pomocnicze: Sugargoo finds; Sugargoo QC;
+  rozmiary Sugargoo; poradnik Sugargoo.
+  Intencje długiego ogona są rozwinięte w widocznych poradach i pytaniach,
+  bez ukrytej listy fraz. Zdjęcia to ilustracje redakcyjne, nie oferty sprzedaży.
+  -->
+  <style>
+    :root{--paper:#f6f3e9;--white:#fffefa;--ink:#183d43;--muted:#526668;--line:#d2d6cb;--yellow:#ecd76c;--pale:#e7ece2;--red:#a72e28;--max:1180px}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:16px;line-height:1.65}
+    a{color:inherit;text-underline-offset:4px}
+    a:hover{color:var(--red)}
+    a:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--red);outline-offset:5px}
+    img{display:block;max-width:100%;height:auto}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2,h3{line-height:1.12;text-wrap:balance;overflow-wrap:break-word}
+    h1{font-size:clamp(2.4rem,5.4vw,4.8rem);letter-spacing:-.065em;font-weight:800}
+    h2{font-size:clamp(1.9rem,3.2vw,2.9rem);letter-spacing:-.045em}
+    h3{font-size:1.1rem;letter-spacing:-.02em}
+    p+p{margin-top:1rem}
+    .wrap{width:min(var(--max),calc(100% - 48px));margin-inline:auto}
+    .eyebrow{font-size:.71rem;font-weight:750;letter-spacing:.14em;text-transform:uppercase}
+    .masthead{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:23px;border-bottom:2px solid var(--ink)}
+    .brand{text-decoration:none;font-size:1.3rem;font-weight:850;letter-spacing:-.05em;display:inline-flex;align-items:center;gap:10px}
+    .brand-mark{width:28px;height:28px;background:var(--ink);color:var(--yellow);display:grid;place-items:center;font-size:.9rem;letter-spacing:0}
+    .edition{font-size:.75rem;color:var(--muted);text-align:right}
+    .category-nav{padding-block:18px 22px}
+    .category-title{display:flex;justify-content:space-between;gap:15px;margin-bottom:12px}
+    .category-title h2{font-size:.74rem;font-weight:750;letter-spacing:.1em;text-transform:uppercase}
+    .category-title p{font-size:.72rem;color:var(--muted)}
+    .category-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+    .category-grid a{display:flex;gap:10px;align-items:center;min-height:52px;padding:10px 13px;text-decoration:none;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font-size:.81rem;font-weight:650;background:var(--white)}
+    .category-grid a span{font-size:.66rem;color:var(--muted);font-weight:500}
+    .category-grid a:hover{background:var(--yellow);color:var(--ink)}
+    .hero{display:grid;grid-template-columns:1.05fr 1fr;border:1px solid var(--ink)}
+    .hero-copy{padding:clamp(26px,4vw,50px);display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+    .hero .eyebrow{margin-bottom:23px}
+    .hero h1 span{display:block;margin-top:17px;font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:.58em;font-weight:400;letter-spacing:-.04em}
+    .hero-copy>p:not(.eyebrow){font-size:.97rem;color:var(--muted);margin-top:24px;max-width:47ch}
+    .button{display:inline-flex;align-items:center;justify-content:center;gap:17px;min-height:49px;padding:12px 20px;background:var(--ink);color:white;text-decoration:none;font-weight:700;font-size:.84rem}
+    .button:hover{background:#29565b;color:white}
+    .hero .button{margin-top:25px}
+    .hero-photo{background:#c50020;display:flex;flex-direction:column;min-width:0}
+    .hero-photo img{width:100%;height:100%;min-height:380px;object-fit:cover;flex:1}
+    .hero-photo figcaption{background:var(--ink);color:#fff;font-size:.7rem;padding:12px 18px;display:flex;justify-content:space-between;gap:15px}
+    .answer{display:grid;grid-template-columns:190px 1fr;gap:30px;padding:25px 30px;background:var(--yellow);margin-block:20px 0}
+    .answer .eyebrow{padding-top:4px}
+    .answer p:last-child{max-width:86ch;font-size:.95rem}
+    .section{padding-block:52px;border-bottom:1px solid var(--line)}
+    .section-heading{display:grid;grid-template-columns:1.2fr 1fr;gap:45px;align-items:end;margin-bottom:25px}
+    .section-heading .eyebrow{margin-bottom:12px}
+    .section-heading>p{font-size:.92rem;color:var(--muted);max-width:53ch}
+    .visual-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px}
+    .visual-grid figure{min-width:0}
+    .visual-grid img{width:100%;height:auto;aspect-ratio:1;object-fit:contain;background:#fff;border:1px solid var(--line)}
+    .visual-grid figcaption{padding-top:14px}
+    .visual-grid h3{font-size:1rem}
+    .visual-grid p{font-size:.82rem;color:var(--muted);margin-top:8px}
+    .image-note{margin-top:20px;font-size:.75rem;color:var(--muted);max-width:110ch}
+    .journal{padding-bottom:12px}
+    .feature{display:grid;grid-template-columns:70px 285px 1fr;gap:30px;padding-block:33px;border-top:1px solid var(--line)}
+    .feature-number{font-family:Georgia,"Times New Roman",serif;font-size:2.8rem;line-height:1;color:#758781}
+    .feature h2{font-size:1.65rem;line-height:1.15;letter-spacing:-.03em}
+    .feature header p{font-size:.83rem;color:var(--muted);margin-top:15px}
+    .feature-body{display:grid;grid-template-columns:1fr 1fr;gap:24px 28px}
+    .feature-body h3{font-size:.96rem;line-height:1.35}
+    .feature-body p{font-size:.86rem;color:var(--muted);margin-top:9px}
+    .feature-body .wide{grid-column:1/-1;background:var(--pale);padding:17px 20px;font-size:.84rem;color:var(--ink)}
+    .table-wrap{overflow-x:auto;border:1px solid var(--line)}
+    table{width:100%;border-collapse:collapse;text-align:left;font-size:.85rem;background:var(--white)}
+    caption{text-align:left;font-size:.84rem;font-weight:700;background:var(--pale);padding:15px 20px}
+    th,td{padding:15px 20px;vertical-align:top;border-bottom:1px solid var(--line)}
+    thead th{font-size:.74rem;letter-spacing:.04em;text-transform:uppercase;background:var(--ink);color:#fff}
+    tbody th{font-weight:700}
+    tbody tr:last-child>*{border-bottom:0}
+    .table-note{font-size:.8rem;color:var(--muted);margin-top:14px}
+    .faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}
+    .faq header .eyebrow{margin-bottom:15px}
+    .faq header p:last-child{font-size:.9rem;color:var(--muted);margin-top:20px;max-width:35ch}
+    details{padding:18px 0;border-top:1px solid var(--line)}
+    details:last-child{border-bottom:1px solid var(--line)}
+    summary{font-weight:700;font-size:.96rem;cursor:pointer;line-height:1.45;padding-right:8px}
+    details p{font-size:.87rem;color:var(--muted);margin-top:13px}
+    .closing{margin-block:30px;display:flex;align-items:center;justify-content:space-between;gap:30px;padding:32px;background:var(--ink);color:#fff}
+    .closing h2{font-size:1.65rem}
+    .closing p{font-size:.86rem;margin-top:12px;color:#e1e9e3;max-width:65ch}
+    .closing .button{background:var(--yellow);color:var(--ink);flex-shrink:0}
+    .closing .button:hover{background:#f5e38c}
+    footer{padding-bottom:28px;color:var(--muted);font-size:.74rem}
+    .footer-line{display:flex;justify-content:space-between;gap:20px;padding-bottom:15px}
+    footer p{max-width:125ch}
+    @media(min-width:901px){
+      .section{content-visibility:auto;contain-intrinsic-size:auto 650px}
+    }
+    @media(max-width:1000px){
+      .feature{grid-template-columns:45px 225px 1fr;gap:20px}
+      .visual-grid{gap:12px}
+      .hero-photo img{min-height:420px}
+      .category-grid a{font-size:.75rem;padding:10px}
+      .faq{gap:35px}
+    }
+    @media(max-width:760px){
+      .wrap{width:calc(100% - 32px)}
+      .hero{grid-template-columns:1fr}
+      .hero-copy{padding:30px}
+      .hero h1{font-size:clamp(2.65rem,8.5vw,4rem)}
+      .hero-photo img{height:auto;min-height:0;aspect-ratio:3/2}
+      .category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .category-grid a{font-size:.84rem;min-height:46px}
+      .answer{grid-template-columns:1fr;gap:10px;padding:22px}
+      .section-heading{grid-template-columns:1fr;gap:16px}
+      .visual-grid{grid-template-columns:1fr 1fr;gap:25px 16px}
+      .feature{grid-template-columns:36px 1fr;gap:18px}
+      .feature-number{font-size:2rem}
+      .feature-body{grid-column:2;grid-template-columns:1fr;gap:21px}
+      .feature-body .wide{grid-column:auto}
+      .feature h2{font-size:1.65rem}
+      .faq{grid-template-columns:1fr;gap:25px}
+      .faq header p:last-child{max-width:65ch}
+      .closing{align-items:flex-start;flex-direction:column;gap:22px}
+      .section{padding-block:38px}
+      .category-title p{display:none}
+    }
+    @media(max-width:420px){
+      .brand{font-size:1.05rem;gap:7px}
+      .brand-mark{width:24px;height:24px}
+      .edition{font-size:.65rem;max-width:17ch}
+      .hero-copy{padding:25px 21px}
+      .visual-grid p{font-size:.78rem}
+      .feature{gap:12px}
+      .feature-body{grid-column:1/-1}
+      .footer-line{flex-direction:column;gap:7px}
+      .closing{padding:25px}
+      .table-wrap th,.table-wrap td{min-width:135px;padding:13px}
+    }
+    @media print{
+      body{background:white;color:black}
+      .wrap{width:100%}
+      .section{content-visibility:visible}
+      .hero,.closing,.answer{background:white;color:black;border:1px solid #aaa}
+      .button{display:none}
+      .closing p{color:black}
+      details{break-inside:avoid}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebPage",
+        "@id":"#strona",
+        "name":"Sugargoo spreadsheet — kategorie, QC i rozmiary",
+        "description":"Niezależny polski przewodnik po wyszukiwaniu produktów, wymiarach i zdjęciach QC, z kategoriami HipobuyFind.",
+        "inLanguage":"pl",
+        "about":{
+          "@type":"Thing",
+          "name":"Wyszukiwanie i porównywanie produktów z list Sugargoo"
+        },
+        "hasPart":[
+          {"@id":"#lista"},
+          {"@id":"#qc"},
+          {"@id":"#rozmiary"},
+          {"@id":"#poradnik"},
+          {"@id":"#pytania"}
+        ]
+      },
+      {
+        "@type":"Article",
+        "@id":"#lista",
+        "headline":"Sugargoo finds: zbuduj krótką listę",
+        "description":"Jak zawęzić wyszukiwanie, zapisać wariant i porównać źródła produktu.",
+        "inLanguage":"pl",
+        "isPartOf":{"@id":"#strona"}
+      },
+      {
+        "@type":"Article",
+        "@id":"#qc",
+        "headline":"Sugargoo QC: czytaj zdjęcia w kontekście",
+        "description":"Jak sprawdzić kontekst zdjęcia, widoczne wykończenia i kompletność dokumentacji.",
+        "inLanguage":"pl",
+        "isPartOf":{"@id":"#strona"}
+      },
+      {
+        "@type":"Article",
+        "@id":"#rozmiary",
+        "headline":"Rozmiary Sugargoo: zacznij od centymetrów",
+        "description":"Porównywanie długości stopy, wymiarów ubrań, nakryć głowy i biżuterii.",
+        "inLanguage":"pl",
+        "isPartOf":{"@id":"#strona"}
+      },
+      {
+        "@type":"Article",
+        "@id":"#poradnik",
+        "headline":"Poradnik Sugargoo: zanim podejmiesz decyzję",
+        "description":"Jak oddzielić cenę produktu od innych kosztów i uzupełnić brakujące informacje.",
+        "inLanguage":"pl",
+        "isPartOf":{"@id":"#strona"}
+      },
+      {
+        "@type":"FAQPage",
+        "@id":"#pytania",
+        "inLanguage":"pl",
+        "mainEntity":[
+          {
+            "@type":"Question",
+            "name":"Co to jest Sugargoo spreadsheet?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"To lista lub katalog linków do produktów wyszukiwanych w kontekście Sugargoo. Pomaga porządkować odkrycia według kategorii. Sam wpis nie potwierdza jakości, autentyczności, dostępności ani aktualnych warunków zakupu."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Dokąd prowadzą przyciski na tej stronie?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Dziesięć odnośników kategorii otwiera odpowiednie działy HipobuyFind. Pozostałe odnośniki prowadzą do strony głównej HipobuyFind. Nie są to bezpośrednie linki do płatności ani do oficjalnego serwisu Sugargoo."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Czy zdjęcia QC potwierdzają autentyczność?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Nie. Zdjęcia QC mogą pokazać wygląd, oznaczenia, wymiary i widoczne wady fotografowanego egzemplarza. Nie zastępują dowodu pochodzenia ani odpowiedniego sprawdzenia autentyczności."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Jak wybrać rozmiar butów lub bluzy?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Porównaj tabelę konkretnej oferty z długością własnej stopy albo wymiarami dobrze dopasowanego ubrania. Sprawdź jednostki i sposób pomiaru. Jeśli kluczowy wymiar nie jest podany, poproś o niego przed wyborem wariantu."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Czy mogę pobrać tutaj arkusz Excel?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Nie. Ta strona jest przewodnikiem HTML z kategoriami i artykułami. Nie udostępnia pliku Excel ani arkusza Google do pobrania; treść można czytać bez zakładania konta."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Czy ilustracje przedstawiają produkty dostępne do zakupu?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Nie należy tego zakładać. Zdjęcia Nike, Louis Vuitton, Gucci, Dior i Hermès służą jako przykłady wizualne. Nie potwierdzają obecności produktu w katalogu HipobuyFind, jego pochodzenia ani związku tej strony z marką."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/lrwgr/">
+</head>
+<body>
+  <header class="wrap masthead">
+    <a class="brand" href="https://www.hipobuyfind.com" aria-label="Przejdź do strony głównej HipobuyFind">
+      <span class="brand-mark" aria-hidden="true">H</span>HipobuyFind / NOTES
+    </a>
+    <p class="edition">Wydanie polskie<br>Niezależny przewodnik zakupowy</p>
+  </header>
+
+  <main class="wrap">
+    <nav class="category-nav" aria-label="Kategorie produktów w HipobuyFind">
+      <div class="category-title">
+        <h2>Wybierz kategorię</h2>
+        <p>Bezpośrednie przejście do HipobuyFind ↗</p>
+      </div>
+      <div class="category-grid">
+        <a href="https://hipobuyfind.com/category-911-Shoes.html"><span aria-hidden="true">01</span>Buty</a>
+        <a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html"><span aria-hidden="true">02</span>Bluzy i swetry</a>
+        <a href="https://hipobuyfind.com/category-913-T-Shirts.html"><span aria-hidden="true">03</span>T-shirty</a>
+        <a href="https://hipobuyfind.com/category-914-Jackets.html"><span aria-hidden="true">04</span>Kurtki</a>
+        <a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html"><span aria-hidden="true">05</span>Spodnie i szorty</a>
+        <a href="https://hipobuyfind.com/category-916-Headwear.html"><span aria-hidden="true">06</span>Nakrycia głowy</a>
+        <a href="https://hipobuyfind.com/category-917-Sets.html"><span aria-hidden="true">07</span>Komplety</a>
+        <a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html"><span aria-hidden="true">08</span>Bielizna</a>
+        <a href="https://hipobuyfind.com/category-919-Jersey.html"><span aria-hidden="true">09</span>Koszulki sportowe</a>
+        <a href="https://hipobuyfind.com/category-920-Accessories.html"><span aria-hidden="true">10</span>Akcesoria</a>
+      </div>
+    </nav>
+
+    <section class="hero" aria-labelledby="tytul">
+      <div class="hero-copy">
+        <p class="eyebrow">Styl zaczyna się od szczegółów</p>
+        <h1 id="tytul">Sugargoo <br>spreadsheet<span>Najpierw pomysł.<br>Potem dobry wybór.</span></h1>
+        <p>Jedna ciekawa para butów potrafi nadać kierunek całej stylizacji. Zanim wybierzesz produkt, przyjrzyj się jego wymiarom, wariantom i zdjęciom. Tutaj znajdziesz kategorie oraz praktyczny sposób na uporządkowanie porównań.</p>
+        <a class="button" href="https://www.hipobuyfind.com">Przeglądaj HipobuyFind <span aria-hidden="true">↗</span></a>
+      </div>
+      <figure class="hero-photo">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=1000&amp;q=78" width="1000" height="667" alt="Czerwony but sportowy Nike z białą podeszwą i białym logo na czerwonym tle" loading="eager" fetchpriority="high" decoding="async">
+        <figcaption><span>Nike / sylwetka i proporcje</span><span>Ilustracja redakcyjna</span></figcaption>
+      </figure>
+    </section>
+
+    <aside class="answer" aria-label="Krótka odpowiedź">
+      <p class="eyebrow">Co warto wiedzieć?</p>
+      <p><strong>Sugargoo spreadsheet</strong> to punkt wyjścia do szukania produktów, a nie potwierdzenie ich właściwości. Wybierz kategorię, zapisz konkretny wariant i porównaj dane z aktualnej oferty. Ten niezależny przewodnik kieruje do kategorii i strony głównej <strong>HipobuyFind</strong>.</p>
+    </aside>
+
+    <section class="section" aria-labelledby="inspiracje">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Cztery spojrzenia na detal</p>
+          <h2 id="inspiracje">Zobacz formę.<br>Sprawdź funkcję.</h2>
+        </div>
+        <p>Zdjęcie podpowiada, czego szukasz. Opis i wymiary pomagają ocenić, czy wybrany fason pasuje do Twoich potrzeb.</p>
+      </div>
+
+      <div class="visual-grid">
+        <figure>
+          <img src="https://fr.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-blouson-monogram-zippe--HTB47EURC853_PM2_Front%20view.jpg?wid=600&amp;hei=600" width="600" height="600" alt="Beżowa kurtka Louis Vuitton z monogramem, kołnierzykiem i zamkiem z przodu" loading="lazy" decoding="async">
+          <figcaption>
+            <h3>Louis Vuitton / warstwy</h3>
+            <p>Jak dobrać kurtkę do bluzy? Zestaw obwód klatki piersiowej, szerokość ramion i miejsce na dodatkową warstwę.</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" width="640" height="640" alt="Beżowa czapka z daszkiem Gucci z brązowym wzorem GG" loading="lazy" decoding="async">
+          <figcaption>
+            <h3>Gucci / dopasowanie</h3>
+            <p>Czapka z daszkiem a obwód głowy: sprawdź zakres regulacji, głębokość i rodzaj zapięcia, nie tylko wygląd przodu.</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.christiandior.com/is/image/diorprod/N1308DVOCYD301_E01?wid=600&amp;hei=600&amp;qlt=75" width="600" height="600" alt="Naszyjnik Dior w złotym kolorze z zawieszkami w kształcie liter DIOR" loading="lazy" decoding="async">
+          <figcaption>
+            <h3>Dior / skala</h3>
+            <p>Jak porównać długość naszyjnika? Zaznacz ją na sznurku i sprawdź przy dekolcie ubrania, z którym chcesz go nosić.</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.hermes.com/is/image/hermesproduct/%E3%82%AB%E3%83%AC-90-%E3%80%8A%E3%81%99%E3%81%B9%E3%81%A6%E3%81%AF%E9%9E%8D%E3%81%AE%E4%B8%AD%E3%81%AB%E3%80%8B--004204S%2001-flat-wm-3-0-0-800-800_g.jpg" width="800" height="800" alt="Kwadratowa apaszka Hermès z pomarańczową obwódką i wielobarwnymi motywami siodeł" loading="lazy" decoding="async">
+          <figcaption>
+            <h3>Hermès / wzór</h3>
+            <p>Apaszka do wiązania na głowie: porównaj wymiary i układ wzoru po złożeniu. Sama fotografia na płasko nie pokazuje efektu wiązania.</p>
+          </figcaption>
+        </figure>
+      </div>
+      <p class="image-note">Ilustracje służą rozpoznaniu fasonów i detali. Nie stanowią oferty, potwierdzenia autentyczności ani zapewnienia dostępności w HipobuyFind. Nazwy marek należą do ich właścicieli; strona nie deklaruje oficjalnej współpracy.</p>
+    </section>
+
+    <section class="section journal" aria-labelledby="czytelnia">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Czytelnia / cztery tematy</p>
+          <h2 id="czytelnia">Mniej zgadywania.<br>Więcej konkretów.</h2>
+        </div>
+        <p>Od pierwszego wyszukiwania po ostatnie pytanie o rozmiar. Każdy temat rozwija inny etap wyboru, zamiast powtarzać tę samą listę produktów.</p>
+      </div>
+
+      <article class="feature" id="lista">
+        <span class="feature-number" aria-hidden="true">01</span>
+        <header>
+          <h2>Sugargoo finds: zbuduj krótką listę</h2>
+          <p>Dobra lista zapisuje powód wyboru. Dzięki temu podobne zdjęcia nie zacierają różnic między ofertami.</p>
+        </header>
+        <div class="feature-body">
+          <section>
+            <h3>Jak znaleźć sneakersy według fasonu?</h3>
+            <p>Zacznij od kształtu: niska lub wysoka cholewka, wąski albo szeroki przód, spokojna lub wyrazista kolorystyka. Nazwa marki bez tych cech daje mało precyzyjny punkt odniesienia.</p>
+          </section>
+          <section>
+            <h3>Jak szukać bluzy bez mylenia wariantów?</h3>
+            <p>Rozróżnij model wkładany przez głowę i rozpinany. Zapisz kolor, rozmiar oraz rodzaj materiału podany w ofercie. Jedna galeria może obejmować kilka różnych opcji.</p>
+          </section>
+          <section>
+            <h3>Jak porównać dwie oferty tego samego modelu?</h3>
+            <p>Sprawdź źródło, oznaczenie wariantu i zawartość zestawu. Podobny tytuł nie oznacza identycznego produktu; istotne różnice mogą dotyczyć wykonania lub opisu.</p>
+          </section>
+          <section>
+            <h3>Co zapisać obok linku do produktu?</h3>
+            <p>Dodaj nazwę sprzedawcy, wybraną opcję, datę sprawdzenia i jedno pytanie do wyjaśnienia. Jeśli oferta zniknie, taki zapis ułatwia ponowne rozpoznanie właściwej referencji.</p>
+          </section>
+          <p class="wide"><strong>Praktyczny skrót:</strong> wybierz kilka produktów o tym samym przeznaczeniu. Porównywanie kurtki przejściowej z ocieplaną zaczyna się od różnych potrzeb, nawet gdy wyglądają podobnie.</p>
+        </div>
+      </article>
+
+      <article class="feature" id="qc">
+        <span class="feature-number" aria-hidden="true">02</span>
+        <header>
+          <h2>Sugargoo QC: czytaj zdjęcia w kontekście</h2>
+          <p>QC oznacza kontrolę jakości. Zdjęcie jest użyteczne wtedy, gdy wiadomo, jaki egzemplarz pokazuje i co pozwala ocenić.</p>
+        </header>
+        <div class="feature-body">
+          <section>
+            <h3>Czym różni się zdjęcie QC od katalogowego?</h3>
+            <p>Fotografia katalogowa przedstawia produkt w celu prezentacji. Przy zdjęciu kontroli szukaj informacji łączącej je z konkretnym egzemplarzem i wariantem. Zdjęcia wcześniejszego zamówienia nie opisują automatycznie Twojego.</p>
+          </section>
+          <section>
+            <h3>Jak sprawdzić szwy i wykończenie ubrania?</h3>
+            <p>Oceń okolice kieszeni, mankiety, łączenia i zamek. Potrzebne są widoki ogólne oraz zbliżenia. Gładka fotografia z przodu nie pokazuje wnętrza ani wszystkich miejsc narażonych na naprężenia.</p>
+          </section>
+          <section>
+            <h3>Jak ocenić kolor produktu na zdjęciach?</h3>
+            <p>Porównaj kilka ujęć, zwracając uwagę na światło i tło. Ekran oraz balans bieli wpływają na odbiór barwy. Nie wyciągaj wniosku o dokładnym odcieniu z jednego mocno oświetlonego kadru.</p>
+          </section>
+          <section>
+            <h3>Jakich dodatkowych zdjęć warto poprosić?</h3>
+            <p>Wskaż konkretny brak: etykietę rozmiaru, obie podeszwy, zapięcie lub wymiar z czytelnym początkiem miarki. Precyzyjne pytanie pomaga bardziej niż ogólne „proszę o lepsze zdjęcia”.</p>
+          </section>
+          <p class="wide"><strong>Granica oceny:</strong> wygląd i widoczne wymiary można porównać. Zdjęcia nie potwierdzają trwałości w użytkowaniu ani autentyczności produktu.</p>
+        </div>
+      </article>
+
+      <article class="feature" id="rozmiary">
+        <span class="feature-number" aria-hidden="true">03</span>
+        <header>
+          <h2>Rozmiary Sugargoo: zacznij od centymetrów</h2>
+          <p>Traktuj rozmiar jako oznaczenie konkretnej oferty. Podstawą porównania są wymiary i sposób ich wykonania.</p>
+        </header>
+        <div class="feature-body">
+          <section>
+            <h3>Jak dobrać buty do długości stopy?</h3>
+            <p>Zmierz obie stopy na stojąco i zapisz większą wartość. Sprawdź, czy tabela opisuje stopę, wkładkę czy inny wymiar. Nie porównuj tych wartości tak, jakby oznaczały to samo.</p>
+          </section>
+          <section>
+            <h3>Jak czytać tabelę rozmiarów bluzy oversize?</h3>
+            <p>Zmierz dobrze dopasowaną bluzę na płasko: klatkę piersiową, ramiona i długość. Porównaj te punkty z tabelą. Samo określenie „oversize” nie mówi, ile miejsca pozostaje pod ubraniem.</p>
+          </section>
+          <section>
+            <h3>Jak sprawdzić długość spodni i szortów?</h3>
+            <p>Odróżnij długość całkowitą od długości nogawki po wewnętrznej stronie. Przy pasie upewnij się, czy podano obwód czy szerokość na płasko oraz czy pomiar dotyczy gumy rozciągniętej.</p>
+          </section>
+          <section>
+            <h3>Jak dopasować koszulkę sportową i komplet?</h3>
+            <p>W koszulce porównaj długość i szerokość z modelem używanym do podobnej aktywności. Przy komplecie sprawdź osobno górę i dół: jedno oznaczenie rozmiaru nie opisuje obu elementów.</p>
+          </section>
+          <p class="wide"><strong>Drobny detal, duża różnica:</strong> w bieliźnie sprawdź skład, elastyczność pasa i metodę pomiaru. Przy nakryciach głowy oraz biżuterii porównuj zakres regulacji lub długość użytkową, nie sam rozmiar opakowania.</p>
+        </div>
+      </article>
+
+      <article class="feature" id="poradnik">
+        <span class="feature-number" aria-hidden="true">04</span>
+        <header>
+          <h2>Poradnik Sugargoo: zanim podejmiesz decyzję</h2>
+          <p>Niepełna informacja to pytanie do wyjaśnienia. Nie zamieniaj jej w domyślną obietnicę.</p>
+        </header>
+        <div class="feature-body">
+          <section>
+            <h3>Jak porównać cenę produktu i pozostałe koszty?</h3>
+            <p>Zapisz kwotę dla wybranego wariantu i jej walutę. Oddziel ją od transportu oraz innych kosztów potwierdzonych dla Twojej sytuacji. Brak danych oznacz jako „do sprawdzenia”, zamiast wpisywać zero.</p>
+          </section>
+          <section>
+            <h3>Jak sprawdzić dostępność wybranego wariantu?</h3>
+            <p>Otwórz aktualną ofertę i sprawdź dokładnie kolor, rozmiar oraz liczbę sztuk. Działający link lub stary zrzut ekranu nie potwierdza, że konkretna opcja nadal jest dostępna.</p>
+          </section>
+          <section>
+            <h3>Co zrobić, gdy link do produktu nie działa?</h3>
+            <p>Użyj zapisanej referencji i nazwy modelu jako punktu startowego. Przy nowej ofercie ponownie sprawdź sprzedawcę, wariant i wymiary; nie zakładaj zgodności na podstawie podobnej miniatury.</p>
+          </section>
+          <section>
+            <h3>Jak odróżnić inspirację od potwierdzonej informacji?</h3>
+            <p>Inspiracja opisuje styl. Potwierdzona informacja powinna mieć określone źródło i dotyczyć wybranej opcji. Jeśli opis materiału, pochodzenia lub warunków jest niejasny, poproś o doprecyzowanie.</p>
+          </section>
+          <p class="wide"><strong>Przed kolejnym krokiem:</strong> przeczytaj aktualne warunki wybranej usługi i oferty. Ten poradnik nie określa obowiązujących opłat, zasad zwrotu ani dostępności poszczególnych marek.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="section" aria-labelledby="porownanie">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Do wykorzystania przy porównaniu</p>
+          <h2 id="porownanie">Jedna oferta.<br>Trzy konkretne pytania.</h2>
+        </div>
+        <p>Przy każdej kategorii sprawdź wymiar, potrzebny widok oraz wybraną opcję. Dzięki temu porównanie pozostaje spójne.</p>
+      </div>
+      <div class="table-wrap" role="region" aria-label="Tabela porównania produktów" tabindex="0">
+        <table>
+          <caption>Co sprawdzić w opisie i na zdjęciach produktu?</caption>
+          <thead>
+            <tr>
+              <th scope="col">Kategoria</th>
+              <th scope="col">Jaki wymiar?</th>
+              <th scope="col">Jaki widok?</th>
+              <th scope="col">Jaki szczegół oferty?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Buty</th>
+              <td>Długość stopy i informacja o szerokości</td>
+              <td>Przód, bok, podeszwy obu butów</td>
+              <td>System rozmiarów i kolor</td>
+            </tr>
+            <tr>
+              <th scope="row">Bluzy, t-shirty, kurtki</th>
+              <td>Szerokość, ramiona, długość</td>
+              <td>Przód, tył, etykieta składu</td>
+              <td>Krój i sposób pomiaru</td>
+            </tr>
+            <tr>
+              <th scope="row">Spodnie i komplety</th>
+              <td>Pas, nogawka, osobne części</td>
+              <td>Ułożenie na płasko</td>
+              <td>Zawartość wybranego zestawu</td>
+            </tr>
+            <tr>
+              <th scope="row">Nakrycia głowy</th>
+              <td>Obwód i zakres regulacji</td>
+              <td>Wnętrze oraz zapięcie</td>
+              <td>Wariant regulowany lub stały</td>
+            </tr>
+            <tr>
+              <th scope="row">Biżuteria i dodatki</th>
+              <td>Długość użytkowa lub wymiary</td>
+              <td>Zapięcie i zbliżenie detali</td>
+              <td>Deklarowany materiał</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">Tabelę stosuj do konkretnego produktu. Różne modele tej samej marki mogą mieć inne tabele wymiarów i inne warianty wykonania.</p>
+    </section>
+
+    <section class="section faq" id="pytania" aria-labelledby="faq-tytul">
+      <header>
+        <p class="eyebrow">Pytania i odpowiedzi</p>
+        <h2 id="faq-tytul">Najpierw jasna<br>odpowiedź.</h2>
+        <p>Krótki punkt odniesienia przed przeglądaniem kategorii i porównywaniem produktów.</p>
+      </header>
+      <div>
+        <details open>
+          <summary>Co to jest Sugargoo spreadsheet?</summary>
+          <p>To lista lub katalog linków do produktów wyszukiwanych w kontekście Sugargoo. Pomaga porządkować odkrycia według kategorii. Sam wpis nie potwierdza jakości, autentyczności, dostępności ani aktualnych warunków zakupu.</p>
+        </details>
+        <details>
+          <summary>Dokąd prowadzą przyciski na tej stronie?</summary>
+          <p>Dziesięć odnośników kategorii otwiera odpowiednie działy HipobuyFind. Pozostałe odnośniki prowadzą do strony głównej HipobuyFind. Nie są to bezpośrednie linki do płatności ani do oficjalnego serwisu Sugargoo.</p>
+        </details>
+        <details>
+          <summary>Czy zdjęcia QC potwierdzają autentyczność?</summary>
+          <p>Nie. Zdjęcia QC mogą pokazać wygląd, oznaczenia, wymiary i widoczne wady fotografowanego egzemplarza. Nie zastępują dowodu pochodzenia ani odpowiedniego sprawdzenia autentyczności.</p>
+        </details>
+        <details>
+          <summary>Jak wybrać rozmiar butów lub bluzy?</summary>
+          <p>Porównaj tabelę konkretnej oferty z długością własnej stopy albo wymiarami dobrze dopasowanego ubrania. Sprawdź jednostki i sposób pomiaru. Jeśli kluczowy wymiar nie jest podany, poproś o niego przed wyborem wariantu.</p>
+        </details>
+        <details>
+          <summary>Czy mogę pobrać tutaj arkusz Excel?</summary>
+          <p>Nie. Ta strona jest przewodnikiem HTML z kategoriami i artykułami. Nie udostępnia pliku Excel ani arkusza Google do pobrania; treść można czytać bez zakładania konta.</p>
+        </details>
+        <details>
+          <summary>Czy ilustracje przedstawiają produkty dostępne do zakupu?</summary>
+          <p>Nie należy tego zakładać. Zdjęcia Nike, Louis Vuitton, Gucci, Dior i Hermès służą jako przykłady wizualne. Nie potwierdzają obecności produktu w katalogu HipobuyFind, jego pochodzenia ani związku tej strony z marką.</p>
+        </details>
+      </div>
+    </section>
+
+    <aside class="closing">
+      <div>
+        <h2>Masz już punkt odniesienia.</h2>
+        <p>Wybierz kategorię, zachowaj kilka referencji i porównaj je według tych samych kryteriów. Dobry wybór zaczyna się od dobrze postawionego pytania.</p>
+      </div>
+      <a class="button" href="https://www.hipobuyfind.com">Otwórz HipobuyFind <span aria-hidden="true">↗</span></a>
+    </aside>
+  </main>
+
+  <footer class="wrap">
+    <div class="footer-line">
+      <span>HipobuyFind / NOTES · Wydanie polskie</span>
+      <a href="https://www.hipobuyfind.com">Strona główna HipobuyFind ↗</a>
+    </div>
+    <p>Niezależna treść informacyjna. Nazwa Sugargoo określa temat przewodnika, nie operatora tej strony. Ilustracje marek są przykładami wizualnymi. Aktualne dane produktu, jego pochodzenie i warunki transakcji należy sprawdzić u źródła.</p>
+  </footer>
+</body>
+</html>
